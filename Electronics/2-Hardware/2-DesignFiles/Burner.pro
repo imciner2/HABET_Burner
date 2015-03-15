@@ -1,6 +1,6 @@
-update=Wed 18 Feb 2015 02:36:01 AM CST
+update=Sat 14 Mar 2015 12:54:59 AM CDT
 version=1
-last_client=eeschema
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
@@ -49,11 +49,6 @@ version=1
 [eeschema]
 version=1
 LibDir=libraries
-NetFmtName=
-RptD_X=0
-RptD_Y=100
-RptLab=1
-LabSize=60
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -91,3 +86,4 @@ LibName33=MiscellaneousDevices
 LibName34=RF_OEM_Parts
 LibName35=Sensors
 LibName36=TransistorParts
+LibName37=libraries/PowerComponents
