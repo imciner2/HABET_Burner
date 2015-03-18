@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/imcinerney/Documents/Github/HABET_Burner/Electronics/2-Hardware/2-DesignFiles/Burner.sch)
-    (date "Wed 18 Mar 2015 01:20:45 AM CDT")
+    (date "Wed 18 Mar 2015 02:31:04 AM CDT")
     (tool "Eeschema (after 2015-mar-04 BZR unknown)-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -335,7 +335,12 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5508FC74))
     (comp (ref D3)
-      (value D_DIODE)
+      (value SL42-E3)
+      (datasheet http://www.vishay.com/docs/88742/sl42.pdf)
+      (fields
+        (field (name DigikeyNumber) SL42-E3/57TGICT-ND)
+        (field (name Manufacturer) Vishay)
+        (field (name ManufacturerNumber) SL42-E3/57T))
       (libsource (lib Diodes) (part D_DIODE))
       (sheetpath (names /) (tstamps /))
       (tstamp 55090720))
@@ -379,25 +384,48 @@
       (tstamp 55092203))
     (comp (ref C3)
       (value 390u)
+      (footprint Capacitors:SMD_POL_E12_8.3mm)
       (libsource (lib Passives) (part CAP_POL))
       (sheetpath (names /) (tstamps /))
       (tstamp 550929F3))
     (comp (ref C5)
       (value 1u)
+      (footprint Capacitors_SMD:C_0805_HandSoldering)
       (libsource (lib Passives) (part CAP))
       (sheetpath (names /) (tstamps /))
       (tstamp 55092BA7))
     (comp (ref C11)
       (value 390u)
+      (footprint Capacitors:SMD_POL_E12_8.3mm)
       (libsource (lib Passives) (part CAP_POL))
       (sheetpath (names /) (tstamps /))
       (tstamp 55093230))
     (comp (ref L1)
       (value 1.8u)
+      (footprint Inductors:IND_BOURNS_SRP1238A)
+      (datasheet http://www.bourns.com/data/global/pdfs/SRP1238A.pdf)
+      (fields
+        (field (name DigikeyNumber) SRP1238A-1R8MCT-ND)
+        (field (name Manufacturer) Bourns)
+        (field (name ManufacturerNumber) SRP1238A-1R8M))
       (libsource (lib Passives) (part IND))
       (sheetpath (names /) (tstamps /))
       (tstamp 55093E99)))
   (libparts
+    (libpart (lib device) (part C)
+      (description "Unpolarized capacitor")
+      (footprints
+        (fp C?)
+        (fp C_????_*)
+        (fp C_????)
+        (fp SMD*_c)
+        (fp Capacitor*))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) C))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
     (libpart (lib device) (part R)
       (description Resistor)
       (footprints
@@ -409,6 +437,33 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
+    (libpart (lib conn) (part CONN_01X03)
+      (footprints
+        (fp Pin_Header_Straight_1X03)
+        (fp Pin_Header_Angled_1X03)
+        (fp Socket_Strip_Straight_1X03)
+        (fp Socket_Strip_Angled_1X03))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X03))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))))
+    (libpart (lib conn) (part CONN_01X04)
+      (footprints
+        (fp Pin_Header_Straight_1X04)
+        (fp Pin_Header_Angled_1X04)
+        (fp Socket_Strip_Straight_1X04)
+        (fp Socket_Strip_Angled_1X04))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X04))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))
+        (pin (num 4) (name P4) (type passive))))
     (libpart (lib Microprocessors) (part MSP430G2553-20)
       (footprints
         (fp tssop-20)
@@ -488,6 +543,14 @@
       (pins
         (pin (num A) (name ~) (type input))
         (pin (num C) (name ~) (type input))))
+    (libpart (lib Passives) (part IND)
+      (description Inductor)
+      (fields
+        (field (name Reference) L)
+        (field (name Value) IND))
+      (pins
+        (pin (num 1) (name ~) (type input))
+        (pin (num 2) (name ~) (type input))))
     (libpart (lib PowerComponents) (part LINEAR_REGULATOR)
       (fields
         (field (name Reference) U)
@@ -527,6 +590,14 @@
         (pin (num 8) (name DR) (type input))
         (pin (num 9) (name VCC) (type input))
         (pin (num 10) (name VIN) (type input))))
+    (libpart (lib Passives) (part CAP)
+      (description "Unpolarized Capacitor")
+      (fields
+        (field (name Reference) C)
+        (field (name Value) CAP))
+      (pins
+        (pin (num 1) (name ~) (type input))
+        (pin (num 2) (name ~) (type input))))
     (libpart (lib Diodes) (part D_ZENER)
       (description Diode)
       (fields
@@ -535,6 +606,14 @@
       (pins
         (pin (num A) (name ~) (type input))
         (pin (num C) (name ~) (type input))))
+    (libpart (lib Passives) (part CAP_POL)
+      (description "Polarized Capacitor")
+      (fields
+        (field (name Reference) C)
+        (field (name Value) CAP_POL))
+      (pins
+        (pin (num N) (name ~) (type input))
+        (pin (num P) (name ~) (type input))))
     (libpart (lib Burner-cache) (part CONN_1)
       (fields
         (field (name Reference) P)
@@ -556,91 +635,26 @@
         (pin (num 1) (name P1) (type passive))
         (pin (num 2) (name P2) (type passive))
         (pin (num 3) (name P3) (type passive))
-        (pin (num 4) (name P4) (type passive))))
-    (libpart (lib Passives) (part IND)
-      (description Inductor)
-      (fields
-        (field (name Reference) L)
-        (field (name Value) IND))
-      (pins
-        (pin (num 1) (name ~) (type input))
-        (pin (num 2) (name ~) (type input))))
-    (libpart (lib Passives) (part CAP_POL)
-      (description "Polarized Capacitor")
-      (fields
-        (field (name Reference) C)
-        (field (name Value) CAP_POL))
-      (pins
-        (pin (num N) (name ~) (type input))
-        (pin (num P) (name ~) (type input))))
-    (libpart (lib Passives) (part CAP)
-      (description "Unpolarized Capacitor")
-      (fields
-        (field (name Reference) C)
-        (field (name Value) CAP))
-      (pins
-        (pin (num 1) (name ~) (type input))
-        (pin (num 2) (name ~) (type input))))
-    (libpart (lib conn) (part CONN_01X03)
-      (footprints
-        (fp Pin_Header_Straight_1X03)
-        (fp Pin_Header_Angled_1X03)
-        (fp Socket_Strip_Straight_1X03)
-        (fp Socket_Strip_Angled_1X03))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X03))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))))
-    (libpart (lib conn) (part CONN_01X04)
-      (footprints
-        (fp Pin_Header_Straight_1X04)
-        (fp Pin_Header_Angled_1X04)
-        (fp Socket_Strip_Straight_1X04)
-        (fp Socket_Strip_Angled_1X04))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X04))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))
-        (pin (num 4) (name P4) (type passive))))
-    (libpart (lib device) (part C)
-      (description "Unpolarized capacitor")
-      (footprints
-        (fp C?)
-        (fp C_????_*)
-        (fp C_????)
-        (fp SMD*_c)
-        (fp Capacitor*))
-      (fields
-        (field (name Reference) C)
-        (field (name Value) C))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive)))))
+        (pin (num 4) (name P4) (type passive)))))
   (libraries
-    (library (logical MiscellaneousDevices)
-      (uri /home/imcinerney/Documents/Github/HABET_Burner/Electronics/2-Hardware/2-DesignFiles/libraries/MiscellaneousDevices.lib))
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib))
+    (library (logical conn)
+      (uri /usr/share/kicad/library/conn.lib))
     (library (logical Microprocessors)
       (uri /home/imcinerney/Documents/Github/HABET_Burner/Electronics/2-Hardware/2-DesignFiles/libraries/Microprocessors.lib))
-    (library (logical TransistorParts)
-      (uri /home/imcinerney/Documents/Github/HABET_Burner/Electronics/2-Hardware/2-DesignFiles/libraries/TransistorParts.lib))
+    (library (logical MiscellaneousDevices)
+      (uri /home/imcinerney/Documents/Github/HABET_Burner/Electronics/2-Hardware/2-DesignFiles/libraries/MiscellaneousDevices.lib))
     (library (logical PowerComponents)
       (uri /home/imcinerney/Documents/Github/HABET_Burner/Electronics/2-Hardware/2-DesignFiles/libraries/PowerComponents.lib))
+    (library (logical TransistorParts)
+      (uri /home/imcinerney/Documents/Github/HABET_Burner/Electronics/2-Hardware/2-DesignFiles/libraries/TransistorParts.lib))
     (library (logical Diodes)
       (uri /home/imcinerney/Documents/Github/HABET_Burner/Electronics/2-Hardware/2-DesignFiles/libraries/Diodes.lib))
     (library (logical Passives)
       (uri /home/imcinerney/Documents/Github/HABET_Burner/Electronics/2-Hardware/2-DesignFiles/libraries/Passives.lib))
     (library (logical Burner-cache)
-      (uri /home/imcinerney/Documents/Github/HABET_Burner/Electronics/2-Hardware/2-DesignFiles/Burner-cache.lib))
-    (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib))
-    (library (logical device)
-      (uri /usr/share/kicad/library/device.lib)))
+      (uri /home/imcinerney/Documents/Github/HABET_Burner/Electronics/2-Hardware/2-DesignFiles/Burner-cache.lib)))
   (nets
     (net (code 1) (name "Net-(Q4-PadS)")
       (node (ref Q4) (pin S))

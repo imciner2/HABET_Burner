@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = Wed 18 Mar 2015 01:31:18 AM CDT
+Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = Wed 18 Mar 2015 02:48:25 AM CDT
 
 BeginCmp
 TimeStamp = /5301CB0B;
@@ -108,15 +108,15 @@ EndCmp
 BeginCmp
 TimeStamp = /55090720;
 Reference = D3;
-ValeurCmp = D_DIODE;
-IdModule  = ;
+ValeurCmp = SL42-E3;
+IdModule  = Diodes:DIODE_DO214AB-SMC;
 EndCmp
 
 BeginCmp
-TimeStamp = /54F6A58A;
+TimeStamp = /55093E99;
 Reference = L1;
 ValeurCmp = 1.8u;
-IdModule  = ;
+IdModule  = Inductors:IND_BOURNS_SRP1238A;
 EndCmp
 
 BeginCmp
