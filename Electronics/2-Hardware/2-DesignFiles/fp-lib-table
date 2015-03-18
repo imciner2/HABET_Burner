@@ -1,3 +1,5 @@
 (fp_lib_table
   (lib (name Footprints)(type Legacy)(uri ${KIPRJMOD}/libraries/Footprints.mod)(options "")(descr ""))
+  (lib (name SMD)(type KiCad)(uri ${KIPRJMOD}/libraries/modules/SMD.pretty)(options "")(descr ""))
+  (lib (name Transistors)(type KiCad)(uri ${KIPRJMOD}/libraries/modules/Transistors.pretty)(options "")(descr ""))
 )

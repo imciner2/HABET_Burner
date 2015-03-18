@@ -1,4 +1,4 @@
-update=Sat 14 Mar 2015 12:54:59 AM CDT
+update=Tue 17 Mar 2015 10:05:03 PM CDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -87,3 +87,4 @@ LibName34=RF_OEM_Parts
 LibName35=Sensors
 LibName36=TransistorParts
 LibName37=libraries/PowerComponents
+LibName38=libraries/Diodes
