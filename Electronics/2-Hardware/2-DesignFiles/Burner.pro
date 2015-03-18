@@ -1,4 +1,4 @@
-update=Tue 17 Mar 2015 10:05:03 PM CDT
+update=Wed 18 Mar 2015 01:10:20 AM CDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -88,3 +88,4 @@ LibName35=Sensors
 LibName36=TransistorParts
 LibName37=libraries/PowerComponents
 LibName38=libraries/Diodes
+LibName39=libraries/Passives
