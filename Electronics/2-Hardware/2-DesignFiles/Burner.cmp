@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = Tue 17 Mar 2015 10:51:59 PM CDT
+Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = Wed 18 Mar 2015 01:31:18 AM CDT
 
 BeginCmp
 TimeStamp = /5301CB0B;
@@ -15,10 +15,10 @@ IdModule  = Capacitors_SMD:C_0805_HandSoldering;
 EndCmp
 
 BeginCmp
-TimeStamp = /54F6C41D;
+TimeStamp = /550929F3;
 Reference = C3;
 ValeurCmp = 390u;
-IdModule  = ;
+IdModule  = Capacitors:SMD_POL_E12_8.3mm;
 EndCmp
 
 BeginCmp
@@ -29,7 +29,7 @@ IdModule  = Capacitors_SMD:C_0805_HandSoldering;
 EndCmp
 
 BeginCmp
-TimeStamp = /54F6DF2C;
+TimeStamp = /55092BA7;
 Reference = C5;
 ValeurCmp = 1u;
 IdModule  = Capacitors_SMD:C_0805_HandSoldering;
@@ -71,10 +71,10 @@ IdModule  = Capacitors_SMD:C_0805_HandSoldering;
 EndCmp
 
 BeginCmp
-TimeStamp = /54F6C219;
+TimeStamp = /55093230;
 Reference = C11;
 ValeurCmp = 390u;
-IdModule  = ;
+IdModule  = Capacitors:SMD_POL_E12_8.3mm;
 EndCmp
 
 BeginCmp
