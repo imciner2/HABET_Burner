@@ -1,4 +1,4 @@
-update=Wed 18 Mar 2015 01:10:20 AM CDT
+update=Wed 18 Mar 2015 09:28:39 PM CDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -44,8 +44,6 @@ LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
 LibName17=Footprints
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=libraries
@@ -89,3 +87,5 @@ LibName36=TransistorParts
 LibName37=libraries/PowerComponents
 LibName38=libraries/Diodes
 LibName39=libraries/Passives
+[general]
+version=1
