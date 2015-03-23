@@ -2,6 +2,7 @@
 ## KiCad Library Excludes
 #################
 *.bak
+*.kicad_pcb-bak
 
 #################
 # Wings 3D File Excludes
