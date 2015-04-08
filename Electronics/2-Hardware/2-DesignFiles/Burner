@@ -1,0 +1,115 @@
+Source:,/home/imcinerney/Documents/AerE490/HABET_Burner/Electronics/2-Hardware/2-DesignFiles/Burner.sch
+Date:,Wed 08 Apr 2015 03:04:28 AM CDT
+Tool:,Eeschema (after 2015-mar-04 BZR unknown)-product
+Component Count:,60
+
+Individual Components:
+
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,DigikeyNumber,Manufacturer,ManufacturerNumber
+,,C1,0.1u,device:C,SMD:SMD_0805,,311-1141-1-ND,Yageo,CC0805KRX7R8BB104
+,,C10,10n,device:C,SMD:SMD_0805,,311-1136-1-ND,Yageo,CC0805KRX7R9BB103
+,,C11,390u,Passives:CAP_POL,Capacitors:SMD_POL_E12_8.3mm,,P16500CT-ND,Panasonic Electronics Components,20SVPF390M
+,,C12,10u,device:C,SMD:SMD_0805,,311-1355-1-ND,Yageo,CC0805ZKY5V6BB106
+,,C13,10u,device:C,SMD:SMD_0805,,311-1355-1-ND,Yageo,CC0805ZKY5V6BB106
+,,C14,1u,Passives:CAP,SMD:SMD_0805,,311-1365-1-ND,Yageo,CC0805KKX7R7BB105
+,,C2,0.1u,device:C,SMD:SMD_0805,,311-1141-1-ND,Yageo,CC0805KRX7R8BB104
+,,C3,390u,Passives:CAP_POL,Capacitors:SMD_POL_E12_8.3mm,,P16500CT-ND,Panasonic Electronic Components,20SVPF390M
+,,C4,0.1u,device:C,SMD:SMD_0805,,311-1141-1-ND,Yageo,CC0805KRX7R8BB104
+,,C5,1u,Passives:CAP,SMD:SMD_0805,,311-1365-1-ND,Yageo,CC0805KKX7R7BB105
+,,C6,2.2n,device:C,SMD:SMD_0805,,311-1129-1-ND,Yageo,CC0805KRX7R9BB222
+,,C7,47n,device:C,SMD:SMD_0805,,311-1431-1-ND,Yageo,CC0805KRX7R9BB473
+,,C8,0.1u,device:C,SMD:SMD_0805,,311-1141-1-ND,Yageo,CC0805KRX7R8BB104
+,,C9,470n,device:C,SMD:SMD_0805,,311-1364-1-ND,Yageo,CC0805KKX7R8BB474
+,,D1,3V,Diodes:D_ZENER,Diodes:DIODE_SOT-23-3,http://www.onsemi.com/pub_link/Collateral/BZX84C2V4LT1-D.PDF,BZX84C3V0LT1GOSCT-ND,ON Semiconductor,BZX84C3V0LT1G
+,,D2,3V,Diodes:D_ZENER,Diodes:DIODE_SOT-23-3,http://www.onsemi.com/pub_link/Collateral/BZX84C2V4LT1-D.PDF,BZX84C3V0LT1GOSCT-ND,ON Semiconductor,BZX84C3V0LT1G
+,,D3,SL42-E3,Diodes:D_DIODE,Diodes:DIODE_DO214AB-SMC,http://www.vishay.com/docs/88742/sl42.pdf,SL42-E3/57TGICT-ND,Vishay,SL42-E3/57T
+,,D4,D_LED,Diodes:D_LED,LEDs:LED_1206,,754-1141-1-ND,Kingbright,APT3216SGC
+,,D5,D_LED,Diodes:D_LED,LEDs:LED_1206,,754-1141-1-ND,Kingbright,APT3216SGC
+,,L1,1.8u,Passives:IND,Inductors:IND_BOURNS_SRP1238A,http://www.bourns.com/data/global/pdfs/SRP1238A.pdf,SRP1238A-1R8MCT-ND,Bourns,SRP1238A-1R8M
+,,P1,CONN_2,Burner-cache:CONN_2,Connectors:CONN_2.54mm_1x2,,,,
+,,P10,CONN_1,Burner-cache:CONN_1,Connectors:CONN_2.54mm_1x1,,,,
+,,P2,CONN_1,Burner-cache:CONN_1,Connectors:CONN_2.54mm_1x1,,,,
+,,P3,CONN_1,Burner-cache:CONN_1,Connectors:CONN_2.54mm_1x1,,,,
+,,P4,CONN_01X03,conn:CONN_01X03,Connectors:CONN_2.54mm_1x3,,,,
+,,P5,CONN_01X04,conn:CONN_01X04,Connectors:CONN_2.00mm_1x4,,,,
+,,P6,CONN_1,Burner-cache:CONN_1,Connectors:CONN_2.54mm_1x1,,,,
+,,P7,CONN_4,Burner-cache:CONN_4,Connectors:CONN_2.54mm_1x4,,,,
+,,P8,CONN_1,Burner-cache:CONN_1,Connectors:CONN_2.54mm_1x1,,,,
+,,P9,CONN_1,Burner-cache:CONN_1,Connectors:CONN_2.54mm_1x1,,,,
+,,Q1,IRF9310,TransistorParts:PMOS_POWER,Transistors:TRANS_SO_4.0mm_1.27mm_8,http://www.irf.com/product-info/datasheets/data/irf9310pbf.pdf,IRF9310TRPBFCT-ND,International Rectifier,IRF9310TRPBF
+,,Q2,IRLML6402,TransistorParts:PMOS_3-Term,Transistors:TRANS_SOT-23-3,http://www.irf.com/product-info/datasheets/data/irlml6402pbf.pdf,IRLML6402PBFCT-ND,International Rectifier,IRLML6402TRPBF
+,,Q3,IRL6342,TransistorParts:NMOS_3-Term,Transistors:TRANS_SO_4.0mm_1.27mm_8,http://www.irf.com/product-info/datasheets/data/irl6342pbf.pdf,IRL6342TRPBFCT-ND,International Rectifier,IRL6342TRPBF
+,,Q4,IRF6201,TransistorParts:NMOS_3-Term,Transistors:TRANS_SO_4.0mm_1.27mm_8,http://www.irf.com/product-info/datasheets/data/irf6201pbf.pdf,IRF6201TRPBFCT-ND,International Rectifier,IRF6201TRPBF
+,,R1,10k,device:R,SMD:SMD_0805,,P10.0KCCT-ND,Panasonic Electronic Components,ERJ-6ENF1002V
+,,R10,41.2k,device:R,SMD:SMD_0805,,P41.2KCCT-ND,Panasonic Electronic Components,ERJ-6ENF4122V
+,,R11,45.3k,device:R,SMD:SMD_0805,,P45.3KCCT-ND,Panasonic Electronic Components,ERJ-6ENF4532V
+,,R12,1,device:R,Resistors:RES_D2PACK,http://www.bourns.com/data/global/pdfs/PWR163.pdf,PWR163S-25-1R00J-ND,Bournes,PWR163S-25-1R00J
+,,R13,8.45k,device:R,SMD:SMD_0805,,P8.45KCCT-ND,Panasonic Electronic Components,ERJ-6ENF8451V
+,,R14,40.2k,device:R,SMD:SMD_0805,,P40.2KCCT-ND,Panasonic Electronic Components,ERJ-6ENF4022V
+,,R15,100,device:R,SMD:SMD_0805,,P100CCT-ND,Panasonic Electronic Components,ERJ-6ENF1000V
+,,R16,3m,device:R,SMD:SMD_2010,http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/pmr.pdf,RHM.003ASCT-ND,Rohm Semiconductor,PMR50HZPFV3L00
+,,R17,10k,device:R,SMD:SMD_0805,,P10.0KCCT-ND,Panasonic Electronic Components,ERJ-6ENF1002V
+,,R18,10k,device:R,SMD:SMD_0805,,P10.0KCCT-ND,Panasonic Electronic Components,ERJ-6ENF1002V
+,,R19,110,Passives:RES,SMD:SMD_0805,,P110CCT-ND,Panasonic Electronic Components,ERJ-6ENF1100V
+,,R2,1.6k,device:R,SMD:SMD_0805,,P1.60KCCT-ND,Panasonic Electronic Components,ERJ-6ENF1601V
+,,R20,280,Passives:RES,SMD:SMD_0805,,P280CCT-ND,Panasonic Electronic Components,ERJ-6ENF2800V
+,,R3,100,device:R,SMD:SMD_0805,,P100CCT-ND,Panasonic Electronic Components,ERJ-6ENF1000V
+,,R4,10k,device:R,SMD:SMD_0805,,P10.0KCCT-ND,Panasonic Electronic Components,ERJ-6ENF1002V
+,,R5,240,device:R,SMD:SMD_0805,,P240CCT-ND,Panasonic Electronic Components,ERJ-6ENF2400V
+,,R6,402,device:R,SMD:SMD_0805,,P402CCT-ND,Panasonic Electronic Components,ERJ-6ENF4020V
+,,R7,3.16k,device:R,SMD:SMD_0805,,P3.16KCCT-ND,Panasonic Electronic Components,ERJ-6ENF3161V
+,,R8,1k,device:R,SMD:SMD_0805,,P1.00KCCT-ND,Panasonic Electronic Components,ERJ-6ENF1001V
+,,R9,1k,device:R,SMD:SMD_0805,,P1.00KCCT-ND,Panasonic Electronics Components,ERJ-6ENF1001V
+,,U1,ADA4805-1,MiscellaneousDevices:ADA4805-1,SMD:SOT-23-6,http://www.analog.com/media/en/technical-documentation/data-sheets/ADA4805-1_4805-2.pdf,ADA4805-1ARJZ-R7CT-ND,Analog_Devices,ADA4805-1ARJZ-R7
+,,U2,MSP430G2553-20,Microprocessors:MSP430G2553-20,SMD:SOP_4.5mm_0.65mm_20,,296-28430-1-ND,Texas Instruments,MSP430G2553IPW20R
+,,U3,LM3481,PowerComponents:LM3481,SMD:SOP_3.0mm_0.5mm_10,http://www.ti.com/lit/ds/symlink/lm3481.pdf,LM3481MM/NOPBCT-ND,Texas_Instruments,LM3481MM/NOPB
+,,U4,ADA4805-1,MiscellaneousDevices:ADA4805-1,SMD:SOT-23-6,http://www.analog.com/media/en/technical-documentation/data-sheets/ADA4805-1_4805-2.pdf,ADA4805-1ARJZ-R7CT-ND,Analog_Devices,ADA4805-1ARJZ-R7
+,,U5,MIC5203-5.0,PowerComponents:LINEAR_REGULATOR_EN,SMD:SOT-23-5,http://www.micrel.com/_PDF/mic5203.pdf,576-2734-1-ND,Micrel,MIC5203-5.0YM5 TR
+,,U6,MIC5203-3.3,PowerComponents:LINEAR_REGULATOR_EN,SMD:SOT-23-5,http://www.micrel.com/_PDF/mic5203.pdf,576-2728-1-ND,Micrel,MIC5203-3.3YM5 TR
+
+
+
+Collated Components:
+
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,DigikeyNumber,Manufacturer,ManufacturerNumber
+1,4,"C1, C2, C4, C8",0.1u,device:C,SMD:SMD_0805,,311-1141-1-ND,Yageo,CC0805KRX7R8BB104
+2,1,C10,10n,device:C,SMD:SMD_0805,,311-1136-1-ND,Yageo,CC0805KRX7R9BB103
+3,2,"C11, C3",390u,Passives:CAP_POL,Capacitors:SMD_POL_E12_8.3mm,,P16500CT-ND,Panasonic Electronics Components,20SVPF390M
+4,2,"C12, C13",10u,device:C,SMD:SMD_0805,,311-1355-1-ND,Yageo,CC0805ZKY5V6BB106
+5,2,"C14, C5",1u,Passives:CAP,SMD:SMD_0805,,311-1365-1-ND,Yageo,CC0805KKX7R7BB105
+6,1,C6,2.2n,device:C,SMD:SMD_0805,,311-1129-1-ND,Yageo,CC0805KRX7R9BB222
+7,1,C7,47n,device:C,SMD:SMD_0805,,311-1431-1-ND,Yageo,CC0805KRX7R9BB473
+8,1,C9,470n,device:C,SMD:SMD_0805,,311-1364-1-ND,Yageo,CC0805KKX7R8BB474
+9,2,"D1, D2",3V,Diodes:D_ZENER,Diodes:DIODE_SOT-23-3,http://www.onsemi.com/pub_link/Collateral/BZX84C2V4LT1-D.PDF,BZX84C3V0LT1GOSCT-ND,ON Semiconductor,BZX84C3V0LT1G
+10,1,D3,SL42-E3,Diodes:D_DIODE,Diodes:DIODE_DO214AB-SMC,http://www.vishay.com/docs/88742/sl42.pdf,SL42-E3/57TGICT-ND,Vishay,SL42-E3/57T
+11,2,"D4, D5",D_LED,Diodes:D_LED,LEDs:LED_1206,,754-1141-1-ND,Kingbright,APT3216SGC
+12,1,L1,1.8u,Passives:IND,Inductors:IND_BOURNS_SRP1238A,http://www.bourns.com/data/global/pdfs/SRP1238A.pdf,SRP1238A-1R8MCT-ND,Bourns,SRP1238A-1R8M
+13,1,P1,CONN_2,Burner-cache:CONN_2,Connectors:CONN_2.54mm_1x2,,,,
+14,6,"P10, P2, P3, P6, P8, P9",CONN_1,Burner-cache:CONN_1,Connectors:CONN_2.54mm_1x1,,,,
+15,1,P4,CONN_01X03,conn:CONN_01X03,Connectors:CONN_2.54mm_1x3,,,,
+16,1,P5,CONN_01X04,conn:CONN_01X04,Connectors:CONN_2.00mm_1x4,,,,
+17,1,P7,CONN_4,Burner-cache:CONN_4,Connectors:CONN_2.54mm_1x4,,,,
+18,1,Q1,IRF9310,TransistorParts:PMOS_POWER,Transistors:TRANS_SO_4.0mm_1.27mm_8,http://www.irf.com/product-info/datasheets/data/irf9310pbf.pdf,IRF9310TRPBFCT-ND,International Rectifier,IRF9310TRPBF
+19,1,Q2,IRLML6402,TransistorParts:PMOS_3-Term,Transistors:TRANS_SOT-23-3,http://www.irf.com/product-info/datasheets/data/irlml6402pbf.pdf,IRLML6402PBFCT-ND,International Rectifier,IRLML6402TRPBF
+20,1,Q3,IRL6342,TransistorParts:NMOS_3-Term,Transistors:TRANS_SO_4.0mm_1.27mm_8,http://www.irf.com/product-info/datasheets/data/irl6342pbf.pdf,IRL6342TRPBFCT-ND,International Rectifier,IRL6342TRPBF
+21,1,Q4,IRF6201,TransistorParts:NMOS_3-Term,Transistors:TRANS_SO_4.0mm_1.27mm_8,http://www.irf.com/product-info/datasheets/data/irf6201pbf.pdf,IRF6201TRPBFCT-ND,International Rectifier,IRF6201TRPBF
+22,4,"R1, R17, R18, R4",10k,device:R,SMD:SMD_0805,,P10.0KCCT-ND,Panasonic Electronic Components,ERJ-6ENF1002V
+23,1,R10,41.2k,device:R,SMD:SMD_0805,,P41.2KCCT-ND,Panasonic Electronic Components,ERJ-6ENF4122V
+24,1,R11,45.3k,device:R,SMD:SMD_0805,,P45.3KCCT-ND,Panasonic Electronic Components,ERJ-6ENF4532V
+25,1,R12,1,device:R,Resistors:RES_D2PACK,http://www.bourns.com/data/global/pdfs/PWR163.pdf,PWR163S-25-1R00J-ND,Bournes,PWR163S-25-1R00J
+26,1,R13,8.45k,device:R,SMD:SMD_0805,,P8.45KCCT-ND,Panasonic Electronic Components,ERJ-6ENF8451V
+27,1,R14,40.2k,device:R,SMD:SMD_0805,,P40.2KCCT-ND,Panasonic Electronic Components,ERJ-6ENF4022V
+28,2,"R15, R3",100,device:R,SMD:SMD_0805,,P100CCT-ND,Panasonic Electronic Components,ERJ-6ENF1000V
+29,1,R16,3m,device:R,SMD:SMD_2010,http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/pmr.pdf,RHM.003ASCT-ND,Rohm Semiconductor,PMR50HZPFV3L00
+30,1,R19,110,Passives:RES,SMD:SMD_0805,,P110CCT-ND,Panasonic Electronic Components,ERJ-6ENF1100V
+31,1,R2,1.6k,device:R,SMD:SMD_0805,,P1.60KCCT-ND,Panasonic Electronic Components,ERJ-6ENF1601V
+32,1,R20,280,Passives:RES,SMD:SMD_0805,,P280CCT-ND,Panasonic Electronic Components,ERJ-6ENF2800V
+33,1,R5,240,device:R,SMD:SMD_0805,,P240CCT-ND,Panasonic Electronic Components,ERJ-6ENF2400V
+34,1,R6,402,device:R,SMD:SMD_0805,,P402CCT-ND,Panasonic Electronic Components,ERJ-6ENF4020V
+35,1,R7,3.16k,device:R,SMD:SMD_0805,,P3.16KCCT-ND,Panasonic Electronic Components,ERJ-6ENF3161V
+36,2,"R8, R9",1k,device:R,SMD:SMD_0805,,P1.00KCCT-ND,Panasonic Electronic Components,ERJ-6ENF1001V
+37,2,"U1, U4",ADA4805-1,MiscellaneousDevices:ADA4805-1,SMD:SOT-23-6,http://www.analog.com/media/en/technical-documentation/data-sheets/ADA4805-1_4805-2.pdf,ADA4805-1ARJZ-R7CT-ND,Analog_Devices,ADA4805-1ARJZ-R7
+38,1,U2,MSP430G2553-20,Microprocessors:MSP430G2553-20,SMD:SOP_4.5mm_0.65mm_20,,296-28430-1-ND,Texas Instruments,MSP430G2553IPW20R
+39,1,U3,LM3481,PowerComponents:LM3481,SMD:SOP_3.0mm_0.5mm_10,http://www.ti.com/lit/ds/symlink/lm3481.pdf,LM3481MM/NOPBCT-ND,Texas_Instruments,LM3481MM/NOPB
+40,1,U5,MIC5203-5.0,PowerComponents:LINEAR_REGULATOR_EN,SMD:SOT-23-5,http://www.micrel.com/_PDF/mic5203.pdf,576-2734-1-ND,Micrel,MIC5203-5.0YM5 TR
+41,1,U6,MIC5203-3.3,PowerComponents:LINEAR_REGULATOR_EN,SMD:SOT-23-5,http://www.micrel.com/_PDF/mic5203.pdf,576-2728-1-ND,Micrel,MIC5203-3.3YM5 TR
